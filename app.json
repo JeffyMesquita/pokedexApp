@@ -3,8 +3,11 @@
     "name": "pokedexApp",
     "slug": "pokedexApp",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#DC0A2D"
+    }
   }
 }
