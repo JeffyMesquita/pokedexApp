@@ -1,0 +1,20 @@
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Loading } from '../screens/Loading';
+import { Home } from '../screens/Home';
+// import { Details } from '../screens/Details';
+
+const { Navigator, Screen } = createNativeStackNavigator();
+
+export function AppRoutes() {
+  return (
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Screen name="loading" component={Loading} />
+      <Screen name="home" component={Home} />
+    </Navigator>
+  );
+}
